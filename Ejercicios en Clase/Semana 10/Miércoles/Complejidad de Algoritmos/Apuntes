@@ -1,0 +1,4 @@
+COMPLEJIDAD DE ALGORITMOS
+
+Big-O, Notación Asintótica, Notación Landau:
+    Evalúa qué tantas iteraciones ocupa un programa para ver su eficiencia. Menos iteraciones = mayor eficiencia

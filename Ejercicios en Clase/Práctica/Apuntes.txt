@@ -1,0 +1,61 @@
+#UML
+
+El Lenguaje de modelado unificado™ (UML®)  es un estándar visual de modelado utilizado para:
+Modelar negocios y procesos similares
+Análisis, diseño e implementación de sistemas basados en software
+
+UML es un lenguaje en común para arquitectos de software, desarrolladores y otros, usado para describir, especificar, diseñar y documentar artefactos de software u otros artefactos del negocio
+
+UML puede ser utilizado para cualquier industria (finanzas, aeroespacial, internet, etc.) y es agnóstico a nivel de lenguaje de programación
+
+
+
+#DIAGRAMA DE CLASES
+
+#Clase
+Una clase es un clasificador que describe un conjunto de objetos que comparten las mismas características y restricciones,
+
+Una clase se muestra como un rectángulo de contorno sólido que contiene el nombre de la clase y el nombre de la clase debe estar centrado y en negrita, con la primera letra del nombre de la clase en mayúscula
+
+La clase se muestra con tres compartimentos, el compartimento central contiene una lista de atributos y el compartimento inferior contiene una lista de operaciones. 
+
+#Multiplicidad
+La multiplicidad es una definición de cardinalidad, es decir, número de elementos de una colección, se representa utilizando un intervalo de enteros no negativos para especificar el número permitido de instancias del elemento descrito. El intervalo de multiplicidad tiene un límite inferior y un límite superior.
+0..0 - 0 - La colección debe estar vacía
+0..1     - Ninguna estancia o una
+1..1     - Exactamente una instancia
+0..* - * - Cero o más instancias
+1..* -   - Al menos una instancia
+5..5 - 5 - Exactamente 5 instancias
+m..n -   - Al menos m pero no más de n instancias
+
+#Asociación
+La asociación es una relación entre clasificadores que se utiliza para mostrar que las instancias de clasificadores pueden estar vinculadas entre sí o combinadas de manera lógica o física en alguna agregación.
+Profesor    Wrote(flechita)   Book
+
+#Agregación
+La agregación es una asociación binaria entre una propiedad y uno o más objetos compuestos que agrupan un conjunto de instancias. La agregación tiene las siguientes características:
+
+es asociación binaria,
+es asimétrico: solo un extremo de la asociación puede ser una agregación,
+la parte compartida podría incluirse en varios compuestos, y si se eliminan algunos o todos los compuestos, la parte compartida aún puede existir
+[Triangulo](Rombo vacío)     [Segmento]
+
+#Composición
+La composición es una forma de agregación "fuerte" con las siguientes características:
+
+es asociación binaria,
+es una relación total / parcial,
+una parte podría incluirse como máximo en un compuesto (entero) a la vez, y
+Si se elimina un compuesto (completo), todas sus partes compuestas se eliminan "normalmente" con él.
+[Folder](Rombo lleno)       [File]
+
+#Generalización/Herencia
+Una generalización es una relación binaria taxonómica entre un clasificador más general (superclase) y un clasificador más específico (subclase).
+
+Una generalización se muestra como una línea con un triángulo hueco como una punta de flecha entre los símbolos que representan los clasificadores involucrados. La punta de flecha apunta al símbolo que representa el clasificador general.
+
+#Visibilidad
+Aunque en Python no tenemos el concepto de visibilidad, en UML, si existe y es importante que entendamos cómo leerlo.
+
+Todos los atributos o métodos que sean públicos (todos en Python) se representa con un “+” antes de su nombre. Mientras que los privados (en Python la convención es nombrar a los atributos o los método con “_” al inicio) se presentan con un “-” antes de su nombre 

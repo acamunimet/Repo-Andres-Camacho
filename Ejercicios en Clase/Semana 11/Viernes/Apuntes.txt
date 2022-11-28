@@ -1,0 +1,13 @@
+Buscar qué es un plt as in plt.title
+
+Buscar lambda
+
+Buscar map
+
+Estudiar librerías
+
+Buscar pie(x)
+
+Buscar sorted
+
+Buscar import *

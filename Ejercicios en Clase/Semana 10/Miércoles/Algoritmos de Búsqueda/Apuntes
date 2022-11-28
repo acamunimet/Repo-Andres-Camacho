@@ -1,0 +1,8 @@
+Métodos mediante los cuales podemos buscar en una secuencia de datos un determinado objeto 
+siempre que contemos una clave para comparar.
+
+Búsqueda Lineal
+- INEFICIENTE
+
+Búsqueda Binaria
+- Necesita que los elementos estén ordenados

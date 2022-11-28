@@ -1,0 +1,14 @@
+def main():
+    lista = [3,5,7,1,4,8,9,2,6]
+    number = int(input("Por favor, introduzca un número"))
+    if lineal_search(number, lista):
+        print("The number", number, "is present")
+    else: 
+        print ("The number", number, "isn't present")
+
+def lineal_search(number,lista):
+    for n in lista:
+        if number == n:
+            return number
+
+main()
